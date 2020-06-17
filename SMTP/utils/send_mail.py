@@ -1,7 +1,6 @@
 import smtplib
 
-sender = 'nikita.a@3ktechnologies.com'
-# receivers = ['nikita.a@3ktechnologies.com']
+sender = 'sender@gmail.com'
 
 message = """From: From Person <from@fromdomain.com>
 To: To Person <to@todomain.com>
@@ -13,7 +12,7 @@ This is a test e-mail message.
 
 def send_email(receivers, message):
     try:
-        smtpObj = smtplib.SMTP('3ktechnologies.com')
+        smtpObj = smtplib.SMTP('gmail.com')
         smtpObj.sendmail(sender, receivers, message)
         print("Successfully sent email")
     except smtplib.SMTPException:
