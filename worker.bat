@@ -1,0 +1,1 @@
+celery -A userManagement worker --loglevel=info.
