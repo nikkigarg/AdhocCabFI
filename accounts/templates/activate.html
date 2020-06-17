@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+    {% if res_status == "success" %}
+        <h1 style="color:green">Account with Email "{{ email }}" has been activated successfully.</h1>
+        <h3>Please login using Link : <a href="http://localhost:4200" style="color:blue">http://localhost:4200</a></h3>
+    {% else %}
+        <h1 style="color:red">{{ msg }}</h1>
+    {% endif %}
+    </body>
+</html>
